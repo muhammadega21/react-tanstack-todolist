@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
-import { TodoService } from "./todo.service";
-import { sendSuccess } from "../../lib/response";
+import { TodoService } from "./todo.service.js";
+import { sendSuccess } from "../../lib/response.js";
 
 export const TodoController = {
   async getAll(req: Request, res: Response, next: NextFunction) {

@@ -1,6 +1,6 @@
-import { prisma } from "../../lib/prisma";
-import { createError } from "../../middlewares/errorHandler.middleware";
-import { CreateTodoInput, UpdateTodoInput } from "./todo.validator";
+import { prisma } from "../../lib/prisma.js";
+import { createError } from "../../middlewares/errorHandler.middleware.js";
+import { CreateTodoInput, UpdateTodoInput } from "./todo.validator.js";
 
 export const TodoService = {
   async findAll(query: {

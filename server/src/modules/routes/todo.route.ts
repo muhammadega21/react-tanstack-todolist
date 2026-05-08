@@ -1,12 +1,12 @@
 import express from "express";
-import { TodoController } from "../todo/todo.controller";
+import { TodoController } from "../todo/todo.controller.js";
 import {
   createTodoSchema,
   idParamSchema,
   updateTodoSchema,
-} from "../todo/todo.validator";
-import { validateRequest } from "../../middlewares/validateRequest.middleware";
-import { validateParams } from "../../middlewares/validateParams.middleware";
+} from "../todo/todo.validator.js";
+import { validateRequest } from "../../middlewares/validateRequest.middleware.js";
+import { validateParams } from "../../middlewares/validateParams.middleware.js";
 
 const router = express.Router();
 
