@@ -21,8 +21,8 @@ const TodoPage = () => {
   }, []);
 
   return (
-    <div className="grid place-items-center min-h-screen py-10 bg-gray-200 text-gray-800">
-      <div className="bg-white shadow-sm w-1/2 lg:w-2/5 px-6 py-3 rounded">
+    <div className="grid place-items-center min-h-screen px-3 py-10 bg-gray-200 text-gray-800">
+      <div className="bg-white shadow-sm w-full sm:w-1/2 lg:w-2/5 px-6 py-3 rounded">
         <h1 className="text-center font-semibold text-xl mb-4">Todolist App</h1>
 
         <TodoForm />
