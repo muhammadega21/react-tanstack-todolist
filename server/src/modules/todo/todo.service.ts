@@ -17,16 +17,16 @@ export const TodoService = {
 
     // Jika menggunakan mongodb,postgrsql, dll
 
-    // if (query.search) {
-    //   where.title = { contains: query.search, mode: "insensitive" };
-    // }
+    if (query.search) {
+      where.title = { contains: query.search, mode: "insensitive" };
+    }
 
     // Jika menggunakan sqlite
-    if (query.search) {
-      where.title = {
-        contains: query.search,
-      };
-    }
+    // if (query.search) {
+    //   where.title = {
+    //     contains: query.search,
+    //   };
+    // }
 
     if (query.completed !== undefined) {
       where.completed = query.completed;
